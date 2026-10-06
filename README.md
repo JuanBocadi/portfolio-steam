@@ -2,6 +2,8 @@
 
 Portfolio personal inspirado en la navegación de Steam: Tienda, Biblioteca, Comunidad y un menú de perfil con Sobre mí, Actividad y Contacto. La Biblioteca permite seleccionar y buscar proyectos; la sección Actividad consulta eventos públicos recientes de GitHub.
 
+**Sitio publicado:** https://juanbocadi.github.io/portfolio-steam/
+
 ## Stack
 
 - HTML5 semántico
