@@ -1,176 +1,140 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#171d25" />
-    <meta name="description" content="Portfolio de Juan Cruz Bocadi. Desarrollo aplicaciones web, sistemas de gestión y soluciones con C#, Python y SQL." />
-    <title>Juan Cruz Bocadi · Desarrollador de software</title>
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./app.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Saltar al contenido</a>
-
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="brand" href="#inicio" aria-label="Juan Cruz Bocadi, ir al inicio">
-          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
-          <span class="brand-word">BOCADI<span class="brand-suffix">.DEV</span></span>
-        </a>
-
-        <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Abrir menú">
-          <span></span><span></span><span></span>
-        </button>
-
-        <nav class="primary-nav" id="primary-nav" aria-label="Navegación principal">
-          <a href="#inicio" data-nav="inicio">TIENDA</a>
-          <a href="#biblioteca" data-nav="biblioteca">BIBLIOTECA</a>
-          <a href="#comunidad" data-nav="comunidad">COMUNIDAD</a>
-          <div class="profile-menu">
-            <button class="profile-trigger" type="button" aria-expanded="false" aria-controls="profile-options">
-              <span class="mini-avatar" aria-hidden="true">JB</span>
-              <span>JUAN BOCADI</span>
-              <span class="chevron" aria-hidden="true"></span>
-            </button>
-            <div class="profile-options" id="profile-options">
-              <a href="#sobre-mi">Ver perfil <span>↗</span></a>
-              <a href="#actividad">Actividad <span>↗</span></a>
-              <a href="#contacto">Contacto <span>↗</span></a>
-              <a href="https://github.com/JuanBocadi" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171d25">
+  <meta name="description" content="Portfolio de Juan Cruz Bocadi, desarrollador de software. Proyectos, tecnologías y actividad en GitHub.">
+  <title>Juan Cruz Bocadi · Biblioteca de proyectos</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./styles.css?v=3">
+  <script src="./app.js?v=3" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <div class="app-shell">
+    <header class="client-header">
+      <div class="client-menu">
+        <span class="client-logo" aria-hidden="true"><span class="logo-ring">●</span> STEAM<span class="portfolio-mark"> / BOCADI</span></span>
+        <span class="menu-label">Steam</span><span class="menu-label">Ver</span><span class="menu-label">Amigos</span><span class="menu-label">Productos</span><span class="menu-label">Ayuda</span>
+        <span class="client-spacer"></span>
+        <a class="top-github" href="https://github.com/JuanBocadi" target="_blank" rel="noopener noreferrer">◈ <span>GitHub</span></a>
+        <a class="top-account" href="#profile"><span class="tiny-avatar">JB</span> bocadijuan</a>
+      </div>
+      <div class="main-menu">
+        <div class="history-controls" aria-hidden="true">❮ <span>❯</span></div>
+        <button class="mobile-menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir navegación">☰</button>
+        <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+          <a href="#store" data-view-link="store">TIENDA</a>
+          <a href="#library" data-view-link="library">BIBLIOTECA</a>
+          <a href="#community" data-view-link="community">COMUNIDAD</a>
+          <div class="account-menu">
+            <button type="button" class="account-trigger" aria-expanded="false" aria-controls="account-options">BOCADIJUAN <span aria-hidden="true">▾</span></button>
+            <div id="account-options" class="account-options">
+              <a href="#activity">Actividad</a>
+              <a href="#profile">Perfil</a>
+              <a href="#contact">Amigos y contacto</a>
+              <a href="#community">Comunidad</a>
+              <a href="#library">Contenido</a>
+              <a href="#skills">Inventario de habilidades</a>
+              <a href="https://github.com/JuanBocadi" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
             </div>
           </div>
         </nav>
       </div>
+      <div class="address-bar"><span aria-hidden="true">⌂</span><span id="address-label">TIENDA / Inicio</span><span class="address-online">● EN LÍNEA</span></div>
     </header>
 
-    <main id="main">
-      <section class="store-section page-section" id="inicio" aria-labelledby="hero-title">
-        <div class="store-bar wrap">
-          <div class="store-tabs" aria-label="Accesos rápidos">
-            <a href="#inicio" class="selected">Descubrir</a>
-            <a href="#biblioteca">Proyectos</a>
-            <a href="#sobre-mi">Perfil</a>
-            <a href="#contacto">Contacto</a>
-          </div>
-          <span class="store-status"><span class="status-dot"></span> Disponible para nuevos proyectos</span>
+    <main id="main" tabindex="-1">
+      <section id="store" class="view store-view" aria-labelledby="store-heading">
+        <div class="store-topline">
+          <div class="store-inner store-nav"><a href="#store" class="selected">Tu tienda</a><a href="#library">Tu biblioteca</a><a href="#community">Comunidad</a><a href="#profile">Tu perfil</a><a href="#contact">Contacto</a><span class="store-search">⌕ BUSCAR PROYECTOS</span></div>
         </div>
-
-        <div class="wrap hero-wrap">
-          <div class="eyebrow"><span class="eyebrow-line"></span> PORTFOLIO / EDICIÓN 2026</div>
-          <div class="hero-panel">
-            <div class="hero-content">
-              <div class="hero-kicker"><span class="live-pulse"></span> DESARROLLADOR DE SOFTWARE · ROSARIO, ARGENTINA</div>
-              <h1 id="hero-title">Juan Cruz<br /><span>Bocadi</span></h1>
-              <p class="hero-lead">Construyo aplicaciones web y sistemas de gestión que convierten necesidades reales en soluciones claras y funcionales.</p>
-              <div class="hero-actions">
-                <a class="button button-primary" href="#biblioteca"><span aria-hidden="true">▶</span> Explorar proyectos</a>
-                <a class="button button-ghost" href="#contacto">Contactarme <span aria-hidden="true">↗</span></a>
+        <div class="store-inner store-content">
+          <aside class="store-side" aria-label="Explorar portfolio">
+            <div class="side-section"><span class="side-caption">TU PORTFOLIO</span><a href="#profile">Acerca de Juan</a><a href="#library">Todos los proyectos</a><a href="#activity">Actividad reciente</a><a href="#contact">Contacto</a></div>
+            <div class="side-section"><span class="side-caption">EXPLORAR POR TECNOLOGÍA</span><a href="#skills">C# y ASP.NET Core</a><a href="#skills">JavaScript</a><a href="#skills">SQL Server</a><a href="#skills">Python y Django</a></div>
+          </aside>
+          <div class="store-main">
+            <div class="section-heading"><span>DESTACADO Y RECOMENDADO</span><a href="#library">VER TODO →</a></div>
+            <div class="featured-frame">
+              <div class="featured-art"><img id="featured-image" src="./assets/autosys.svg" alt="Ilustración del proyecto AutoSys"></div>
+              <div class="featured-info">
+                <div class="featured-previews" aria-hidden="true"><img src="./assets/autosys.svg" alt=""><img src="./assets/futbolle.svg" alt=""><img src="./assets/bases.svg" alt=""></div>
+                <div class="featured-copy"><span class="release-label">PORTFOLIO DESTACADO</span><h2 id="featured-title">AutoSys</h2><p id="featured-description">Sistema web para la gestión de talleres mecánicos, clientes, vehículos y órdenes de ingreso.</p><div class="feature-meta"><span>Proyecto aplicado</span><span id="featured-tech">C# · ASP.NET Core MVC</span></div><a id="featured-link" class="steam-blue-button" href="#library/autosys">VER EN BIBLIOTECA <span>›</span></a></div>
               </div>
+              <button class="carousel-arrow carousel-prev" type="button" aria-label="Proyecto anterior">‹</button>
+              <button class="carousel-arrow carousel-next" type="button" aria-label="Proyecto siguiente">›</button>
             </div>
-            <div class="hero-art" aria-hidden="true">
-              <div class="art-halo art-halo-one"></div>
-              <div class="art-halo art-halo-two"></div>
-              <div class="art-window">
-                <div class="art-titlebar"><i></i><i></i><i></i><span>~/juan-bocadi/workspace</span></div>
-                <div class="art-code"><span class="code-comment">// siguiente proyecto</span><br /><span class="code-blue">const</span> idea = <span class="code-gold">"resolver"</span>;<br /><span class="code-blue">const</span> stack = [<span class="code-green">"C#"</span>, <span class="code-green">"Python"</span>];<br /><br /><span class="code-blue">build</span>(idea, stack)<span class="code-cursor"></span></div>
-              </div>
-              <div class="floating-chip chip-one">ASP.NET CORE</div>
-              <div class="floating-chip chip-two">SQL SERVER</div>
-              <div class="floating-chip chip-three">PYTHON</div>
+            <div class="carousel-dots" aria-label="Seleccionar proyecto destacado"><button type="button" data-slide="0" class="active" aria-label="Ver AutoSys"></button><button type="button" data-slide="1" aria-label="Ver Futbolle"></button><button type="button" data-slide="2" aria-label="Ver Bases de Datos Avanzada"></button></div>
+            <div class="section-heading"><span>OFERTAS ESPECIALES PARA CONOCERME</span></div>
+            <div class="store-tiles">
+              <a href="#profile" class="store-tile profile-tile"><span class="tile-overline">PERFIL DE DESARROLLADOR</span><strong>Juan Cruz<br>Bocadi</strong><span>Desarrollador de software · Rosario, Argentina</span><b>VER PERFIL →</b></a>
+              <a href="#library" class="store-tile projects-tile"><span class="tile-overline">MI BIBLIOTECA</span><strong>3 proyectos<br>publicados</strong><span>Aplicaciones, juego web y bases de datos</span><b>EXPLORAR →</b></a>
+              <a href="#contact" class="store-tile contact-tile"><span class="tile-overline">DISPONIBLE PARA CONECTAR</span><strong>¿Hablamos?</strong><span>Conocé mi trabajo y contactame</span><b>CONTACTAR →</b></a>
             </div>
-            <div class="hero-bottom"><span>DESTACADO EN EL PERFIL</span><span>01 / 03</span></div>
-          </div>
-
-          <div class="store-highlights">
-            <div><span class="highlight-icon" aria-hidden="true">⌘</span><span><strong>Aplicaciones web</strong><small>De la idea al producto</small></span></div>
-            <div><span class="highlight-icon" aria-hidden="true">▤</span><span><strong>Datos y sistemas</strong><small>Procesos ordenados</small></span></div>
-            <div><span class="highlight-icon" aria-hidden="true">↗</span><span><strong>En aprendizaje constante</strong><small>Ingeniería en Sistemas · UAI</small></span></div>
+            <h1 id="store-heading" class="store-identity">Juan Cruz Bocadi <span>· Desarrollador de software</span></h1>
+            <p class="store-intro">Desarrollo aplicaciones web y sistemas de gestión que convierten necesidades reales en soluciones claras y funcionales.</p>
+            <div class="store-cta"><a class="steam-blue-button" href="#library">VER PROYECTOS <span>›</span></a><a class="plain-link" href="#contact">Contactarme →</a></div>
           </div>
         </div>
       </section>
 
-      <section class="library-section page-section" id="biblioteca" aria-labelledby="library-heading">
-        <div class="wrap">
-          <div class="section-heading"><div><span class="section-overline">TU PRÓXIMA PARTIDA</span><h2 id="library-heading">Biblioteca de proyectos</h2><p>Elegí un proyecto para ver cómo fue construido.</p></div><span class="section-count">03 PROYECTOS</span></div>
-          <div class="library-shell">
-            <div class="library-sidebar">
-              <div class="library-top"><span>COLECCIÓN</span><span>⌄</span></div>
-              <label class="search-box"><span class="sr-only">Buscar proyectos</span><span aria-hidden="true">⌕</span><input id="project-search" type="search" placeholder="Buscar en la biblioteca" autocomplete="off" /></label>
-              <div class="library-category">TODOS LOS PROYECTOS <span>3</span></div>
-              <div class="project-list" id="project-list" role="group" aria-label="Seleccionar proyecto">
-                <button class="project-item is-active" type="button" data-project="autosys" aria-pressed="true"><span class="project-tile tile-autosys">A</span><span>AutoSys</span><span class="item-active-mark" aria-hidden="true"></span></button>
-                <button class="project-item" type="button" data-project="futbolle" aria-pressed="false"><span class="project-tile tile-futbolle">F</span><span>Futbolle</span><span class="item-active-mark" aria-hidden="true"></span></button>
-                <button class="project-item" type="button" data-project="bases" aria-pressed="false"><span class="project-tile tile-bases">DB</span><span>Bases de Datos Avanzada</span><span class="item-active-mark" aria-hidden="true"></span></button>
+      <section id="library" class="view library-view" aria-labelledby="library-heading" hidden>
+        <aside class="library-sidebar" aria-label="Lista de proyectos">
+          <a href="#library" class="library-home">⌂ <span>INICIO DE LA BIBLIOTECA</span></a>
+          <div class="sidebar-tools"><span>PROYECTOS <small>3</small></span><span aria-hidden="true">▾</span></div>
+          <label class="search-wrap"><span class="sr-only">Buscar proyectos</span><input id="project-search" type="search" placeholder="Buscar en biblioteca…"><span aria-hidden="true">⌕</span></label>
+          <div class="sidebar-group-title">▾ &nbsp; TODOS LOS PROYECTOS (3)</div>
+          <div class="project-list" role="group" aria-label="Seleccionar proyecto">
+            <button type="button" data-project="autosys" class="project-row"><span class="project-row-icon autosys-icon">A</span>AutoSys</button>
+            <button type="button" data-project="futbolle" class="project-row"><span class="project-row-icon futbolle-icon">F</span>Futbolle</button>
+            <button type="button" data-project="bases" class="project-row"><span class="project-row-icon bases-icon">DB</span>Bases de Datos Avanzada</button>
+          </div>
+          <p id="search-empty" class="search-empty" hidden>No hay proyectos con ese nombre.</p>
+          <div class="sidebar-bottom"><a href="#skills">◇ Inventario de habilidades</a><a href="#activity">◷ Actividad de GitHub</a></div>
+        </aside>
+        <div class="library-main">
+          <div id="library-overview" class="library-overview">
+            <div class="library-overview-head"><span>TU BIBLIOTECA</span><h2 id="library-heading">Inicio</h2><p>Proyectos de Juan Cruz Bocadi</p></div>
+            <div class="library-inner">
+              <div class="section-heading"><span>ACTUALIZACIONES Y NOVEDADES</span><a href="#activity">VER ACTIVIDAD →</a></div>
+              <div class="news-row"><span class="news-icon">◈</span><div><strong>Portfolio de Juan Cruz Bocadi</strong><p>Explorá los proyectos, las tecnologías y la actividad pública en GitHub desde esta biblioteca.</p></div><a href="#activity">VER ACTIVIDAD</a></div>
+              <div class="section-heading shelf-heading"><span>TUS PROYECTOS</span><span>3 ELEMENTOS</span></div>
+              <div class="library-covers">
+                <a href="#library/autosys" class="cover-card"><img src="./assets/autosys.svg" alt="Ilustración de AutoSys"><strong>AutoSys</strong><span>Aplicación web</span></a>
+                <a href="#library/futbolle" class="cover-card"><img src="./assets/futbolle.svg" alt="Ilustración de Futbolle"><strong>Futbolle</strong><span>Juego web</span></a>
+                <a href="#library/bases" class="cover-card"><img src="./assets/bases.svg" alt="Ilustración de Bases de Datos Avanzada"><strong>Bases de Datos Avanzada</strong><span>Base de datos</span></a>
               </div>
-              <p class="search-empty" id="search-empty" hidden>No hay proyectos con ese nombre.</p>
-              <div class="library-sidebar-footer"><span class="status-dot"></span> 3 proyectos disponibles</div>
             </div>
-
-            <article class="project-detail" id="project-detail" aria-live="polite">
-              <div class="project-banner banner-autosys" id="project-banner">
-                <div class="banner-grid"></div><div class="banner-orbit banner-orbit-one"></div><div class="banner-orbit banner-orbit-two"></div>
-                <span class="banner-topline">BOCADI.DEV / PROYECTO DESTACADO</span>
-                <div class="banner-wordmark" id="banner-wordmark">AUTOSYS<span>.</span></div>
-                <span class="banner-subline" id="banner-subline">GESTIÓN DE TALLERES</span>
-              </div>
-              <div class="project-body">
-                <div class="project-title-row"><div><span class="detail-overline">EN TU BIBLIOTECA</span><h3 id="project-title">AutoSys</h3></div><span class="detail-type" id="project-type">APLICACIÓN WEB</span></div>
-                <div class="project-action-row"><a id="project-play" class="play-button" href="https://github.com/JuanBocadi/AutoSys" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">▶</span> VER EN GITHUB <span class="sr-only">(abre en una pestaña nueva)</span></a><span class="action-note">Código fuente del proyecto <span aria-hidden="true">↗</span></span></div>
-                <div class="project-content-grid">
-                  <div class="project-description"><h4>ACERCA DE ESTE PROYECTO</h4><p id="project-description">Plataforma web para digitalizar la gestión de clientes, vehículos y órdenes de ingreso de un taller mecánico. Combina una arquitectura MVC con persistencia relacional para ordenar el trabajo operativo diario.</p><a id="project-repo-link" href="https://github.com/JuanBocadi/AutoSys" target="_blank" rel="noopener noreferrer">Abrir repositorio <span aria-hidden="true">↗</span></a></div>
-                  <div class="project-meta"><h4>TECNOLOGÍAS</h4><div class="tech-tags" id="project-tech"><span>ASP.NET Core MVC</span><span>C#</span><span>SQL Server</span><span>Entity Framework Core</span><span>Razor</span></div><div class="meta-divider"></div><span class="meta-label">ORIGEN</span><strong id="project-origin">Proyecto aplicado</strong></div>
-                </div>
-              </div>
-            </article>
+          </div>
+          <div id="project-detail" class="project-detail" hidden>
+            <div class="detail-art"><img id="detail-image" src="./assets/autosys.svg" alt="Ilustración de AutoSys"><div class="detail-art-shade"></div><div class="detail-art-caption"><span>COLECCIÓN DE JUAN BOCADI</span><h2 id="detail-banner-title">AutoSys</h2></div></div>
+            <div class="detail-action-bar"><a id="project-play" class="play-button" href="https://github.com/JuanBocadi/AutoSys" target="_blank" rel="noopener noreferrer"><span>▶</span> JUGAR <small>VER REPOSITORIO</small></a><div class="detail-stat"><span>TIPO</span><strong id="project-type">Aplicación web</strong></div><div class="detail-stat"><span>ORIGEN</span><strong id="project-origin">Proyecto aplicado</strong></div><div class="detail-stat"><span>PLATAFORMA</span><strong>GitHub</strong></div></div>
+            <nav class="detail-subnav" aria-label="Información del proyecto"><a href="#project-about">INFORMACIÓN</a><a href="#project-stack">TECNOLOGÍAS</a><a id="project-repo-link" href="https://github.com/JuanBocadi/AutoSys" target="_blank" rel="noopener noreferrer">REPOSITORIO ↗</a></nav>
+            <div class="detail-columns"><div><article class="detail-panel" id="project-about"><div class="panel-heading"><span>ACERCA DE ESTE PROYECTO</span></div><h3 id="project-title">AutoSys</h3><p id="project-description"></p></article><article class="detail-panel" id="project-stack"><div class="panel-heading"><span>TECNOLOGÍAS</span></div><div id="project-tech" class="tech-pills"></div></article></div><aside class="detail-side"><div class="side-panel"><span>DESARROLLADO POR</span><a href="#profile">Juan Cruz Bocadi</a><span>ENLACES</span><a id="project-side-link" href="https://github.com/JuanBocadi/AutoSys" target="_blank" rel="noopener noreferrer">Ver código en GitHub ↗</a></div></aside></div>
           </div>
         </div>
       </section>
 
-      <section class="about-section page-section" id="sobre-mi" aria-labelledby="about-heading">
-        <div class="wrap">
-          <div class="section-heading"><div><span class="section-overline">PERFIL DE JUGADOR</span><h2 id="about-heading">Sobre mí</h2><p>La persona detrás del código.</p></div></div>
-          <div class="profile-layout">
-            <div class="profile-card">
-              <div class="profile-cover"><span>JUANBOCADI.EXE</span><span>ONLINE</span></div>
-              <div class="profile-card-body"><div class="avatar-large" role="img" aria-label="Avatar con las iniciales de Juan Bocadi">JB<span class="avatar-online"></span></div><div class="profile-identity"><h3>Juan Cruz Bocadi</h3><span>Desarrollador de software</span></div><div class="profile-location">⌖ Rosario, Santa Fe, Argentina</div><a class="profile-link" href="https://github.com/JuanBocadi" target="_blank" rel="noopener noreferrer">Ver perfil de GitHub <span aria-hidden="true">↗</span></a></div>
-            </div>
-            <div class="about-main">
-              <div class="bio-panel"><span class="panel-label">BIOGRAFÍA</span><p>Soy estudiante de Ingeniería en Sistemas de Información en la UAI y desarrollo aplicaciones web orientadas a resolver problemas concretos. Trabajé en sistemas de gestión con .NET, C#, Python y bases de datos relacionales. Me interesa entender el proceso completo, desde el modelado de datos hasta una interfaz clara para quien usa el producto.</p></div>
-              <div class="skills-header"><h3>Mi inventario de habilidades</h3><span>STACK TECNOLÓGICO</span></div>
-              <div class="skills-grid">
-                <div class="skill-group"><div class="skill-symbol">◩</div><h4>FRONTEND</h4><ul><li>HTML y CSS</li><li>Tailwind CSS</li><li>Razor Views</li><li>JavaScript</li></ul></div>
-                <div class="skill-group"><div class="skill-symbol">⌘</div><h4>BACKEND Y DATOS</h4><ul><li>C# · ASP.NET Core MVC</li><li>Python · Django</li><li>Entity Framework Core</li><li>SQL Server · SQL</li></ul></div>
-                <div class="skill-group"><div class="skill-symbol">⚙</div><h4>HERRAMIENTAS</h4><ul><li>Git · GitHub</li><li>Visual Studio · VS Code</li><li>Modelado relacional</li><li>Windows · Linux</li></ul></div>
-              </div>
-              <div class="education-strip"><span class="education-icon" aria-hidden="true">✦</span><div><strong>Ingeniería en Sistemas de Información</strong><span>Universidad Abierta Interamericana · 2023 — presente</span></div></div>
-            </div>
-          </div>
-        </div>
+      <section id="community" class="view community-view" aria-labelledby="community-heading" hidden>
+        <div class="community-head"><div class="content-width"><div class="eyebrow">COMUNIDAD</div><h2 id="community-heading">Centro de la comunidad</h2><p>Proyectos, código y conexiones alrededor de mi trabajo.</p><nav aria-label="Secciones de comunidad"><a href="#community" class="active">Destacados</a><a href="#activity">Actividad</a><a href="#library">Proyectos</a><a href="#contact">Contacto</a></nav></div></div>
+        <div class="content-width community-layout"><div class="community-feed"><div class="section-heading"><span>CONTENIDO DESTACADO</span><a href="#library">VER BIBLIOTECA →</a></div><div class="community-grid">
+          <a href="#library/autosys" class="community-card"><img src="./assets/autosys.svg" alt="Ilustración de AutoSys"><span>APLICACIÓN WEB</span><strong>AutoSys</strong><p>Gestión de talleres y órdenes de ingreso.</p></a>
+          <a href="#library/futbolle" class="community-card"><img src="./assets/futbolle.svg" alt="Ilustración de Futbolle"><span>JUEGO WEB</span><strong>Futbolle</strong><p>Adivinanzas de fútbol con API y niveles de dificultad.</p></a>
+          <a href="#library/bases" class="community-card"><img src="./assets/bases.svg" alt="Ilustración de Bases de Datos Avanzada"><span>BASES DE DATOS</span><strong>Bases de Datos Avanzada</strong><p>Ejercicios, modelos y procedimientos en SQL Server.</p></a>
+        </div></div><aside class="community-side"><div class="side-panel"><span>ENCONTRAME EN</span><a href="https://github.com/JuanBocadi" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/juancruzbocadi/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="#contact">Correo electrónico →</a></div><div class="side-panel"><span>EXPLORAR</span><a href="#activity">Actividad reciente →</a><a href="#profile">Perfil completo →</a></div></aside></div>
       </section>
 
-      <section class="community-section page-section" id="comunidad" aria-labelledby="community-heading">
-        <div class="wrap">
-          <div class="section-heading"><div><span class="section-overline">CONECTEMOS</span><h2 id="community-heading">Comunidad</h2><p>Código abierto, ideas y conversaciones.</p></div></div>
-          <div class="community-grid">
-            <a class="community-card" href="https://github.com/JuanBocadi" target="_blank" rel="noopener noreferrer"><span class="community-icon">&lt;/&gt;</span><span class="community-card-content"><span class="community-kicker">REPOSITORIOS Y CÓDIGO</span><strong>GitHub</strong><small>github.com/JuanBocadi</small></span><span class="community-arrow" aria-hidden="true">↗</span></a>
-            <a class="community-card" href="https://www.linkedin.com/in/juancruzbocadi/" target="_blank" rel="noopener noreferrer"><span class="community-icon">in</span><span class="community-card-content"><span class="community-kicker">TRAYECTORIA PROFESIONAL</span><strong>LinkedIn</strong><small>linkedin.com/in/juancruzbocadi</small></span><span class="community-arrow" aria-hidden="true">↗</span></a>
-          </div>
-
-          <div class="activity-panel" id="actividad" aria-labelledby="activity-heading">
-            <div class="activity-top"><div><span class="section-overline">HISTORIAL RECIENTE</span><h3 id="activity-heading">Actividad en GitHub</h3></div><a href="https://github.com/JuanBocadi?tab=overview" target="_blank" rel="noopener noreferrer">Ver toda la actividad <span aria-hidden="true">↗</span></a></div>
-            <div class="activity-feed" id="activity-feed" aria-live="polite"><p class="activity-loading">Cargando actividad pública reciente…</p></div>
-            <p class="activity-footnote">Se muestran eventos públicos recientes o, si no hay, repositorios actualizados. GitHub puede limitar temporalmente la consulta.</p>
-          </div>
-        </div>
+      <section id="profile" class="view profile-view" aria-labelledby="profile-heading" hidden>
+        <div class="profile-backdrop"><div class="content-width profile-layout"><div class="profile-main"><div class="profile-header"><div class="profile-avatar" role="img" aria-label="Avatar con las iniciales JB">JB</div><div><span class="profile-username">BOCADIJUAN</span><h2 id="profile-heading">Juan Cruz Bocadi</h2><p>Desarrollador de software · Rosario, Argentina</p></div><a href="#contact" class="profile-contact">Contactarme</a></div><div class="profile-body"><div class="profile-section-title">SOBRE MÍ</div><div class="profile-text"><p>Soy Juan Cruz Bocadi, estudiante de Ingeniería en Sistemas en la Universidad Abierta Interamericana. Me interesa crear aplicaciones web y sistemas de gestión que resuelvan necesidades concretas. Trabajo con C#, ASP.NET Core, JavaScript, Python y bases de datos SQL, y disfruto aprender mientras desarrollo proyectos propios y académicos.</p></div><div class="profile-section-title">PROYECTOS DESTACADOS</div><div class="profile-projects"><a href="#library/autosys"><img src="./assets/autosys.svg" alt=""><span>AutoSys</span></a><a href="#library/futbolle"><img src="./assets/futbolle.svg" alt=""><span>Futbolle</span></a><a href="#library/bases"><img src="./assets/bases.svg" alt=""><span>Bases de Datos Avanzada</span></a></div><div class="profile-section-title" id="skills">INVENTARIO DE HABILIDADES</div><div class="skills-grid"><div><h3>Frontend</h3><p>HTML5 · CSS3 · JavaScript · Tailwind CSS · Razor</p></div><div><h3>Backend</h3><p>C# · ASP.NET Core MVC · Python · Django · Entity Framework Core</p></div><div><h3>Datos y herramientas</h3><p>SQL Server · T-SQL · Git · GitHub · Visual Studio · VS Code · Windows · Linux</p></div></div></div></div><aside class="profile-sidebar"><div class="level-badge">NIVEL <strong>DEV</strong></div><div class="profile-side-block"><span>ESTADO ACTUAL</span><p><i class="online-dot"></i> Disponible para conectar</p></div><div class="profile-side-block"><span>ENLACES</span><a href="https://github.com/JuanBocadi" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/juancruzbocadi/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="#activity">Actividad reciente →</a><a href="#contact">Contacto →</a></div><div class="profile-side-block"><span>PROYECTOS</span><p>3 en biblioteca</p></div></aside></div></div>
       </section>
 
-      <section class="contact-section page-section" id="contacto" aria-labelledby="contact-heading">
-        <div class="wrap contact-panel"><div><span class="section-overline">NUEVA CONVERSACIÓN</span><h2 id="contact-heading">¿Construimos algo<br /><span>juntos?</span></h2><p>Estoy abierto a proyectos, colaboraciones y oportunidades de desarrollo de software.</p><a class="button button-primary" href="mailto:juanchruzbocadi@gmail.com?subject=Contacto%20desde%20tu%20portfolio">Enviar un email <span aria-hidden="true">↗</span></a></div><div class="contact-right"><span class="contact-orbit" aria-hidden="true">✳</span><span class="contact-caption">CANAL DIRECTO</span><a href="mailto:juanchruzbocadi@gmail.com">juanchruzbocadi@gmail.com</a><div class="contact-socials"><a href="https://github.com/JuanBocadi" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/juancruzbocadi/" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a></div></div></div>
-      </section>
+      <section id="activity" class="view activity-view" aria-labelledby="activity-heading" hidden><div class="content-width activity-layout"><div class="activity-main"><div class="activity-title"><span>BOCADIJUAN</span><h2 id="activity-heading">Actividad reciente</h2><p>Eventos públicos de mi cuenta de GitHub.</p></div><div class="activity-filter">TODA LA ACTIVIDAD <span>▾</span></div><div id="activity-feed" class="activity-feed" aria-live="polite"><p class="activity-loading">Cargando actividad de GitHub…</p></div></div><aside class="activity-side"><div class="side-panel"><span>PERFIL</span><a href="#profile">Juan Cruz Bocadi →</a><span>ENLACES</span><a href="https://github.com/JuanBocadi" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="#library">Biblioteca →</a><a href="#contact">Contacto →</a></div></aside></div></section>
+
+      <section id="contact" class="view contact-view" aria-labelledby="contact-heading" hidden><div class="content-width contact-layout"><div class="contact-heading"><span>AMIGOS Y CHAT</span><h2 id="contact-heading">Conectemos</h2><p>Si querés conversar sobre un proyecto, una oportunidad laboral o intercambiar ideas, escribime.</p></div><div class="contact-cards"><a href="mailto:juanchruzbocadi@gmail.com" class="contact-card"><span>✉</span><small>CORREO</small><strong>juanchruzbocadi@gmail.com</strong><b>ENVIAR EMAIL ↗</b></a><a href="https://github.com/JuanBocadi" target="_blank" rel="noopener noreferrer" class="contact-card"><span>⌘</span><small>CÓDIGO</small><strong>github.com/JuanBocadi</strong><b>VER GITHUB ↗</b></a><a href="https://www.linkedin.com/in/juancruzbocadi/" target="_blank" rel="noopener noreferrer" class="contact-card"><span>▣</span><small>RED PROFESIONAL</small><strong>Juan Cruz Bocadi</strong><b>VER LINKEDIN ↗</b></a></div></div></section>
     </main>
-
-    <footer class="site-footer"><div class="wrap footer-inner"><span class="footer-brand">BOCADI<span>.DEV</span></span><span>Hecho en Rosario, Argentina · 2026</span><a href="#inicio">Volver arriba ↑</a></div></footer>
-  </body>
+    <footer class="client-footer"><a href="#library"><span aria-hidden="true">⊕</span> Añadir un proyecto</a><span class="footer-center">◉ Portfolio de Juan Cruz Bocadi</span><a href="#contact">Amigos y chat <span aria-hidden="true">▴</span></a></footer>
+  </div>
+</body>
 </html>

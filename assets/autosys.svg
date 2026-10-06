@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-labelledby="t d">
+  <title id="t">AutoSys</title><desc id="d">Ilustración de un automóvil y un taller en tonos azules.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#07131d"/><stop offset=".48" stop-color="#17435a"/><stop offset="1" stop-color="#071823"/></linearGradient>
+    <linearGradient id="glow" x2="1" y2="0"><stop stop-color="#4bc4ec" stop-opacity="0"/><stop offset=".5" stop-color="#6de4ff" stop-opacity=".7"/><stop offset="1" stop-color="#4bc4ec" stop-opacity="0"/></linearGradient>
+    <pattern id="grid" width="54" height="54" patternUnits="userSpaceOnUse"><path d="M54 0H0V54" fill="none" stroke="#72c9e2" stroke-opacity=".17"/></pattern>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1200v500H0z"/><path fill="url(#grid)" d="M0 0h1200v500H0z"/>
+  <path d="M620 86h440v240H620z" fill="#06131c" opacity=".5" stroke="#82d3e9" stroke-opacity=".4" stroke-width="3"/>
+  <path d="M646 103h388m-388 32h388m-388 32h388m-388 32h388m-388 32h388m-388 32h388m-388 32h388" stroke="#8bd8e8" stroke-opacity=".25" stroke-width="4"/>
+  <path d="M0 340h1200v160H0z" fill="#081a25" opacity=".7"/><path d="M0 348h1200" stroke="url(#glow)" stroke-width="5"/>
+  <g fill="none" stroke="#94edff" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M620 353l31-71c12-26 31-43 63-47l207-15c33-2 55 9 77 35l50 56 37 13c19 7 27 19 27 36v21H608v-17c0-6 4-9 12-11z" stroke-width="8"/>
+    <path d="M683 282l39-38 185-14 63 65-287 3zM995 303l55 11" stroke-width="5" opacity=".75"/>
+    <circle cx="724" cy="376" r="37" fill="#071923" stroke-width="8"/><circle cx="990" cy="376" r="37" fill="#071923" stroke-width="8"/>
+    <path d="M745 348h220" stroke-width="3" opacity=".45"/>
+  </g>
+  <path d="M610 405h530" stroke="#5cddff" stroke-width="2" opacity=".45"/>
+  <text x="67" y="92" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="5" fill="#8ed8f0">BOCADI / PROYECTO</text>
+  <text x="62" y="271" font-family="Arial, sans-serif" font-size="108" font-weight="900" letter-spacing="-8" fill="#f0f8fb">AUTO<tspan fill="#69d4f1">SYS</tspan></text>
+  <text x="69" y="319" font-family="Arial, sans-serif" font-size="23" font-weight="700" letter-spacing="5" fill="#a3d5e5">GESTIÓN DE TALLERES</text>
+  <path d="M67 350h450" stroke="#68b7cc" stroke-width="2" opacity=".6"/>
+</svg>

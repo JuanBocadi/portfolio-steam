@@ -1,6 +1,6 @@
 # Portfolio de Juan Cruz Bocadi
 
-Portfolio personal inspirado en la navegación de Steam: Tienda, Biblioteca, Comunidad y un menú de perfil con Sobre mí, Actividad y Contacto. La Biblioteca permite seleccionar y buscar proyectos; la sección Actividad consulta eventos públicos recientes de GitHub.
+Portfolio personal construido como una interfaz de escritorio inspirada en Steam. Cada apartado ocupa una vista propia: Tienda, Biblioteca, Comunidad, Perfil, Actividad y Contacto. En la Biblioteca se selecciona un proyecto desde el panel lateral; su ficha muestra descripción, tecnologías y un botón «Jugar» que abre el repositorio en GitHub.
 
 **Sitio publicado:** https://juanbocadi.github.io/portfolio-steam/
 
@@ -8,29 +8,35 @@ Portfolio personal inspirado en la navegación de Steam: Tienda, Biblioteca, Com
 
 - HTML5 semántico
 - CSS3 (Grid, Flexbox y media queries)
-- JavaScript nativo, sin dependencias de ejecución
-- API pública de GitHub para el feed de actividad
+- JavaScript nativo
+- SVG originales para las portadas
+- API pública de GitHub para la actividad reciente
+
+No hay dependencias ni paso de compilación.
 
 ## Correr localmente
-
-No requiere instalación de dependencias. Para probarlo con el servidor local incluido:
 
 ```bash
 node server.mjs
 ```
 
-Después abrí `http://localhost:4173`. También se puede abrir `index.html` directamente, aunque el feed de GitHub depende de la conexión a internet.
+Abrí `http://localhost:4173`. La actividad necesita conexión a Internet; si la API pública no responde, se muestran los repositorios recientes o un enlace directo al perfil.
 
-El feed de actividad necesita conexión a internet y puede estar limitado por la cuota pública de la API. El resto del sitio funciona sin esa consulta.
+## Navegación
+
+- **Tienda:** presentación y proyectos destacados.
+- **Biblioteca:** tres proyectos con fichas y enlaces a sus repositorios.
+- **Comunidad:** proyectos y perfiles públicos.
+- **Perfil:** biografía, estudios y habilidades agrupadas.
+- **Actividad:** eventos públicos recientes de GitHub.
+- **Contacto:** correo, GitHub y LinkedIn.
+
+Las rutas usan fragmentos (`#library/autosys`, por ejemplo), por lo que funcionan en GitHub Pages sin configuración adicional. El sitio responde a 360, 768 y 1280 px, tiene navegación por teclado y respeta `prefers-reduced-motion`.
 
 ## Publicación
 
-Es un sitio estático. Se puede desplegar en GitHub Pages, Netlify o Vercel apuntando a la raíz del repositorio, sin comando de build. Para GitHub Pages: **Settings → Pages → Deploy from a branch → main / root**.
+GitHub Pages sirve la raíz de la rama `main` de este repositorio. Cada `push` actualiza la web pública. También se puede publicar en Netlify o Vercel como sitio estático, sin comando de build.
 
 ## Contenido
 
-Perfil y tecnologías tomados del CV de Juan Cruz Bocadi. Los enlaces de proyectos apuntan a repositorios públicos de [JuanBocadi](https://github.com/JuanBocadi). La biografía es un borrador para revisar y personalizar antes de la entrega.
-
-## Accesibilidad
-
-El sitio incluye navegación por teclado, enlace para saltar al contenido, foco visible, estructura semántica, un solo `h1` y soporte para `prefers-reduced-motion`.
+La información profesional proviene del CV de Juan Cruz Bocadi y los proyectos enlazan a repositorios públicos de [JuanBocadi](https://github.com/JuanBocadi). La biografía es un borrador para que Juan revise su redacción antes de la entrega.

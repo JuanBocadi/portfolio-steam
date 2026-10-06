@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-labelledby="t d">
+  <title id="t">Bases de Datos Avanzada</title><desc id="d">Ilustración de bases de datos conectadas sobre una cuadrícula violeta.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101826"/><stop offset=".5" stop-color="#41405c"/><stop offset="1" stop-color="#151e2e"/></linearGradient>
+    <radialGradient id="light"><stop stop-color="#c69cf5" stop-opacity=".5"/><stop offset="1" stop-color="#c69cf5" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#d1aeef" stroke-opacity=".14"/></pattern>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1200v500H0z"/><path fill="url(#grid)" d="M0 0h1200v500H0z"/><circle cx="873" cy="255" r="310" fill="url(#light)"/>
+  <g fill="#292d48" stroke="#c8aafa" stroke-width="6"><ellipse cx="835" cy="131" rx="199" ry="61"/><path d="M636 131v229c0 36 89 64 199 64s199-28 199-64V131"/><path d="M636 208c0 36 89 64 199 64s199-28 199-64M636 286c0 36 89 64 199 64s199-28 199-64" fill="none"/></g>
+  <g fill="#d9c5ff"><circle cx="714" cy="211" r="7"/><circle cx="746" cy="218" r="7"/><circle cx="714" cy="293" r="7"/><circle cx="746" cy="301" r="7"/><circle cx="714" cy="365" r="7"/><circle cx="746" cy="373" r="7"/></g>
+  <path d="M1032 194h91v65h57M1032 328h66v85h89" fill="none" stroke="#a787dc" stroke-width="5"/><circle cx="1179" cy="259" r="11" fill="#d4b8ff"/><circle cx="1187" cy="413" r="11" fill="#d4b8ff"/>
+  <text x="65" y="91" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="5" fill="#d2bbf4">BOCADI / PROYECTO</text>
+  <text x="61" y="272" font-family="Arial, sans-serif" font-size="102" font-weight="900" letter-spacing="-6" fill="#f5f0ff">DATA <tspan fill="#c9a5f5">LAB</tspan></text>
+  <text x="69" y="320" font-family="Arial, sans-serif" font-size="23" font-weight="700" letter-spacing="5" fill="#d9c6ec">BASES DE DATOS AVANZADA</text>
+  <path d="M67 350h450" stroke="#bfa1dd" stroke-width="2" opacity=".7"/>
+</svg>
